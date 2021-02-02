@@ -51,3 +51,23 @@
 // var FirstName = "Bob";
 // var LastName = "Smith";
 // console.log(FirstName + " " + LastName);
+
+// # 2. Write a program that uses variables to store a first and last name, 
+// then prints the full name in one line using string interpolation (the #{} operator).
+// var FirstName = "Bob";
+// var LastName = "Smith";
+// console.log(`${FirstName} ${LastName}`);
+
+// # 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+// const readline = require('readline');
+
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
+
+// rl.question('Please Enter A Word', (word) => {
+//   if (word.match('marco')) {
+//     console.log('polo');
+//   } rl.close();
+// });

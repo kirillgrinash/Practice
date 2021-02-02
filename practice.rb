@@ -52,3 +52,15 @@
 # last_name = "Smith"
 # puts first_name + " " + last_name
 
+# 2. Write a program that uses variables to store a first and last name, 
+# then prints the full name in one line using string interpolation (the #{} operator).
+# first_name = "Bob"
+# last_name = "Smith"
+# puts "#{first_name} #{last_name}"
+
+# 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+# puts "Please Enter A Word"
+# word = gets.chomp.downcase
+# if word == "marco"
+#   puts "polo"
+# end
