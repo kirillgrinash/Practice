@@ -71,3 +71,17 @@
 //     console.log('polo');
 //   } rl.close();
 // });
+
+// # 4. Write a program that uses variables to store three different colors, 
+// then prints out a sentence using the colors with string concatenation (the + operator).
+// var color1 = "Purple";
+// var color2 = "Black";
+// var color3 = "Gold";
+// console.log("Here is a list of colors; " + color1 + ", " + color2 + ", " + color3 + ".");
+
+// # 5. Write a program that uses variables to store three different colors, 
+// then prints out a sentence using the colors with string interpolation (the #{} operator).
+// var color1 = "Purple";
+// var color2 = "Black";
+// var color3 = "Gold";
+// console.log(`Here is a list of colors; ${color1}, ${color2}, ${color3}!`);
