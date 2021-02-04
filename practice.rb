@@ -64,3 +64,17 @@
 # if word == "marco"
 #   puts "polo"
 # end
+
+# 4. Write a program that uses variables to store three different colors, 
+# then prints out a sentence using the colors with string concatenation (the + operator).
+# color_1 = "black"
+# color_2 = "red"
+# color_3 = "blue"
+# puts "My favorite colors are" + " " + color_1 + ", " + color_2 + ", " + color_3 + "!"
+
+# 5. Write a program that uses variables to store three different colors, 
+# then prints out a sentence using the colors with string interpolation (the #{} operator).
+# color_1 = "black"
+# color_2 = "red"
+# color_3 = "blue"
+# puts "These are some of the best colors; #{color_1}, #{color_2}, #{color_3}!"
