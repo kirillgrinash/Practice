@@ -78,3 +78,26 @@
 # color_2 = "red"
 # color_3 = "blue"
 # puts "These are some of the best colors; #{color_1}, #{color_2}, #{color_3}!"
+
+
+
+
+
+
+
+
+
+#//////////Use built-in methods for strings and numbers//////////
+# 1. Write a program that asks the user to enter a word, then prints that word with all capital letters.
+# puts "Please Enter A Word"
+# word = gets.chomp.upcase
+# puts word
+
+# 2. Write a program that asks the user to enter a number, then prints "That's a big number" if the number is greater than 100.
+# puts "Please Enter A Number"
+# number = gets.chomp.to_i
+# if number > 100
+#   puts "That's a big number"
+# else
+#   puts "Thank you"
+# end
