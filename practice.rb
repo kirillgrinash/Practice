@@ -144,3 +144,27 @@
 # letters_array = ["A", "B", "C", "D"]
 # letters_array[1] = 75
 # p letters_array
+
+
+
+
+
+
+
+
+
+#//////////Create a hash, read items from a hash, and add new items to existing hash from memory//////////
+# 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
+# person = {"first_name" => "Bob", "last_name" => "Smith", "email" => "BSmith@example.com"}
+# p person["first_name"]
+# p person["last_name"]
+# p person["email"]
+
+# 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+# people_array = [
+#   {"first_name" => "Bob", "last_name" => "Smith"},
+#   {"first_name" => "Alex", "last_name" => "Brown"},
+#   {"first_name" => "Tom", "last_name" => "Brady"}
+# ]
+# p people_array[0]["first_name"]
+# p people_array[0]["last_name"]
