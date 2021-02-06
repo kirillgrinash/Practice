@@ -125,3 +125,22 @@
 #   x += 1
 # end
 
+
+
+
+
+
+
+
+
+#//////////Create an array, read items from an array, and add new items to existing array from memory//////////
+# 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+# words_array = ["Fire", "Water", "Wind"]
+# words_array << "Earth"
+# words_array << "Sky"
+# p words_array
+
+# 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+# letters_array = ["A", "B", "C", "D"]
+# letters_array[1] = 75
+# p letters_array
