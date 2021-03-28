@@ -188,3 +188,14 @@
 # ]
 # p people_array[0]["first_name"]
 # p people_array[0]["last_name"]
+
+
+
+
+
+
+
+
+
+#//////////Create a function with valid syntax from memory//////////
+# 1. Write a function that takes in a number and returns the number times two. Then run the function and print the result.
