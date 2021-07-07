@@ -110,11 +110,23 @@
 # 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
 # puts "Please enter a name"
 # name = gets.chomp 
-# unless name.upcase == "SANTA"
+# if name.upcase != "SANTA"
 #   puts "You're not Santa."
 # end
 
+# 7. Write a program that uses variables to store a book's title and author, 
+# then prints out a sentence using that information with string concatenation (the + operator).
+# author = "J. K. Rowling"
+# book_1 = "Harry Potter and the Sorcerer's Stone"
+# book_2 = "Harry Potter and the Goblet of Fire"
+# puts author + " is famous for writing " + book_1 + " and " + book_2 +"."
 
+# 8. Write a program that uses variables to store a book's title and author, 
+# then prints out a sentence using that information with string interpolation (the #{} operator).
+# author = "J. K. Rowling"
+# book_1 = "Harry Potter and the Sorcerer's Stone"
+# book_2 = "Harry Potter and the Goblet of Fire"
+# puts "#{author} is famous for writing #{book_1} and #{book_2}."
 
 
 
@@ -138,9 +150,22 @@
 #   puts "Thank you"
 # end
 
+# 3. Write a program that asks the user to enter two numbers, then prints the numbers added together.
+# puts "Please enter the first number"
+# number_1 = gets.chomp.to_i
+# puts "Please enter the second number"
+# number_2 = gets.chomp.to_i
+# puts number_1 + number_2
 
+# 4. Write a program that asks the user to enter a word, then prints that word in reverse order.
+# puts "please enter a word"
+# word = gets.chomp
+# puts word.reverse
 
-
+# 5. Write a program that asks the user to enter a number, then prints the number times 10.
+# puts "Enter a number"
+# number = gets.chomp
+# puts number.to_i * 10
 
 
 
@@ -161,8 +186,21 @@
 #   x += 1
 # end
 
+# 3. Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
+# puts "Enter a word"
+# while true
+#   word = gets.chomp
+#   if word.upcase == "STOP"
+#     break
+#   end
+# end
 
-
+# 4. Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
+# number = 0
+# while number <= 100
+#   puts number
+#   number += 5
+# end
 
 
 
@@ -181,6 +219,23 @@
 # letters_array[1] = 75
 # p letters_array
 
+# 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
+# numbers_array = [1, 2, 3, 4, 5]
+# index = 0
+# while index < numbers_array.length
+#   puts numbers_array[index]
+#   index += 1
+# end
+
+# 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
+# numbers = [1]
+# numbers << 2 << 3 << 4
+# puts numbers
+
+# 5. Create an array to store 3 strings with lower case letters. 
+# Then change the third string to have all capital letters and print the array on one line.
+# string_array = ["alpha", "bravo", "charlie"]
+# puts string_array[2].upcase 
 
 
 
