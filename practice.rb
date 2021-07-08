@@ -260,13 +260,115 @@
 # p people_array[0]["first_name"]
 # p people_array[0]["last_name"]
 
+# 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+# store_prices = {"fries" => 2.00, "drink" => 1.00, "burger" => 5.00}
+# store_prices["chips"] = 2.00
+# p store_prices
 
-
-
-
+# 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+# book_info = {
+#   "Book Title" => "The Random Book", 
+#   "Author" => "Bob Smith", 
+#   "Number of Pages" => 900, 
+#   "Language" => "English"
+# }
+# p book_info["Book Title"]
+# p book_info["Author"]
+# p book_info["Number of Pages"]
+# p book_info["Language"]
 
 
 
 
 #//////////Create a function with valid syntax from memory//////////
 # 1. Write a function that takes in a number and returns the number times two. Then run the function and print the result.
+# def get_double(number)
+#   return number * 2
+# end
+
+# p get_double(5)
+
+# 2. Write a function that takes in a string and returns the string with all capital letters. Then run the function and print the result.
+# def caps(string)
+#   return string.upcase
+# end
+
+# p caps("hello")
+
+# 3. Write a function that takes in two numbers and returns the first number subtracted by the second. 
+# Then run the function and print the result.
+# def subtract(number_1, number_2)
+#   return number_1 - number_2
+# end
+
+# p subtract(10, 4)
+
+# 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
+# def squared(number)
+#   return number * number
+# end
+
+# p squared(5)
+
+
+
+
+
+
+
+
+
+# //////////Map an array to a new array with some computation performed on each item//////////
+#  1. Start with an array of numbers and create a new array with each number times 3.
+#     For example, [1, 2, 3] becomes [3, 6, 9].
+# ///While Loop///
+# old_array = [1, 2, 3]
+# new_array = []
+# index = 0
+# while index < old_array.length
+#   new_array << old_array[index] * 3
+#   index += 1
+# end
+# p new_array
+
+# ///.Each Shortcut///
+# old_array = [1, 2, 3]
+# new_array = []
+# old_array.each { |number| 
+#   new_array << number * 3
+# }
+# p new_array
+
+#///.Map Shortcut///
+# old_array = [1, 2, 3]
+# new_array = old_array.map { |number| 
+#   number * 3
+# }
+# p new_array
+
+#  2. Start with an array of strings and create a new array with each string upcased.
+#     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
+# ///While Loop///
+# old_words = ["hello", "goodbye"]
+# new_words = []
+# index = 0
+# while index < old_words.length
+#   new_words << old_words[index].upcase
+#   index += 1
+# end
+# p new_words
+
+# ///.Each Shortcut///
+# old_words = ["hello", "goodbye"]
+# new_words = []
+# old_words.each { |word| 
+#   new_words << word.upcase
+# }
+# p new_words
+
+# ///.Map Shortcut///
+# old_words = ["hello", "goodbye"]
+# new_words = old_words.map { |word| 
+#   word.upcase
+# }
+# p new_words
