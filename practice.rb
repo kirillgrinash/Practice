@@ -480,3 +480,182 @@
 #   word[0].upcase == "W"
 # }
 # p select_words
+
+
+
+
+
+
+
+
+
+
+# //////////Reduce an array to a single value based on some computation//////////
+#  1. Start with an array of numbers and compute the sum of all the numbers.
+#     For example, [5, 10, 8, 3] becomes 26.
+# ///While Loop///
+# numbers = [5, 10, 8, 3]
+# sum = 0
+# index = 0
+# while index < numbers.length
+#   sum = numbers[index] + sum
+#   index += 1
+# end
+# p sum
+
+# ///.Each Shortcut///
+# numbers = [5, 10, 8, 3]
+# sum = 0
+# numbers.each { |number|
+#   sum = number + sum
+# }
+# p sum
+
+# ///.Reduce Shortcut///
+# numbers = [5, 10, 8, 3]
+# sum = numbers.reduce { |sum, number|
+#   sum + number
+# }
+# p sum
+
+#  2. Start with an array of strings and combine them all into a single string.
+#     For example, ["volleyball", "basketball", "badminton"] becomes "volleyballbasketballbadminton".
+# ///While Loop///
+# sports = ["volleyball", "basketball", "badminton"]
+# single_string = ""
+# index = 0
+# while index < sports.length
+#   single_string = single_string + sports[index]
+#   index += 1
+# end
+# p single_string
+
+# ///.Each Shortcut///
+# sports = ["volleyball", "basketball", "badminton"]
+# single_string = ""
+# sports.each { |sport|
+#   single_string = single_string + sport
+# }
+# p single_string
+
+# ///.Reduce Shortcut///
+# sports = ["volleyball", "basketball", "badminton"]
+# single_string = sports.reduce { |single_string, sport|
+#   single_string + sport
+# }
+# p single_string
+
+
+
+
+
+
+
+
+
+
+# //////////Convert data from one data type into another//////////
+#  1. Convert an array of arrays into a hash.
+#     For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
+# pairs = [[1, 3], [8, 9], [2, 16]]
+# hash = {}
+# index = 0
+# while index < pairs.length
+#   key = pairs[index][0]
+#   value = pairs[index][1]
+#   hash[key] = value
+#   index += 1
+# end
+# p hash
+
+#  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
+#     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] 
+#     becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
+# data = [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}]
+# data_hash = {}
+#         # ///USING WHILE LOOP///
+#         # index = 0
+#         # while index < data.length
+#         #   key = data[index][:id]
+#         #   data_hash[key] = data[index]
+#         #   index += 1
+#         # end
+# data.each { |info|
+#   key = info[:id]
+#   data_hash[key] = info
+# }
+# p data_hash
+
+#  3. Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
+#     For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
+# word = "bookkeeper"
+# letter_counter = {}
+# index = 0
+# while index < word.length
+#   letter = word[index]
+#   if letter_counter[letter] == nil
+#     letter_counter[letter] = 1
+#   else
+#     letter_counter[letter] += 1
+#   end
+#   index += 1
+# end
+# p letter_counter
+
+
+
+
+
+
+
+
+
+
+# //////////Write a loop within a loop//////////
+#  1. Use a nested loop to convert an array of number pairs into a single flattened array.
+#     For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
+# double_array = [[1, 3], [8, 9], [2, 16]]
+# single_array = []
+# double_array.each { |group|
+#   group.each { |single|
+#     single_array << single
+#   }
+# }
+# p single_array
+
+#  2. Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
+#     For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
+# array_1 = ["a", "b", "c"]
+# array_2 = ["d", "e", "f", "g"]
+# new_array = []
+# array_1.each { |letter|
+#   array_2.each { |second|
+#     new_array << letter + second
+#   }
+# }
+# p new_array
+
+#  3. Use a nested loop with one array of strings to create a new array that contains every 
+#     combination of each string with every other string in the array.
+#     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
+# array = ["a", "b", "c", "d"]
+# new_array = []
+# array.each { |first|
+#   array.each { |second|
+#     if first != second
+#       new_array << first + second
+#     end
+#   }
+# }
+# p new_array
+
+
+
+
+
+
+
+
+
+
+# //////////Write functions using recursion//////////
