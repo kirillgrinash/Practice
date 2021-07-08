@@ -339,7 +339,7 @@
 # }
 # p new_array
 
-#///.Map Shortcut///
+# ///.Map Shortcut///
 # old_array = [1, 2, 3]
 # new_array = old_array.map { |number| 
 #   number * 3
@@ -372,3 +372,111 @@
 #   word.upcase
 # }
 # p new_words
+
+#  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
+#     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
+# ///While Loop///
+# info = [
+#   {name: "Alice", age: 27}, 
+#   {name: "Blane", age: 16}
+# ]
+# names = []
+# index = 0
+# while index < info.length
+#   names << info[index][:name]
+#   index += 1
+# end
+# p names
+
+# ///.Each Shortcut///
+# info = [
+#   {name: "Alice", age: 27}, 
+#   {name: "Blane", age: 16}
+# ]
+# names = []
+# info.each { |data| 
+#   names << data[:name]
+# }
+# p names
+
+# ///.Map Shortcut///
+# info = [
+#   {name: "Alice", age: 27}, 
+#   {name: "Blane", age: 16}
+# ]
+# names = info.map { |data|
+#   data[:name]
+# }
+# p names
+
+
+
+
+
+
+
+
+
+
+# //////////Select items from an array into a new array with items that match a certain condition//////////
+#  1. Start with an array of numbers and create a new array with only the numbers less than 20.
+#     For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
+# ///While Loop///
+# numbers = [2, 32, 80, 18, 12, 3]
+# smaller_numbers = []
+# index = 0
+# while index < numbers.length
+#   if numbers[index] < 20
+#     smaller_numbers << numbers[index]
+#   end
+#   index += 1
+# end
+# p smaller_numbers
+
+# ///.Each Shortcut///
+# numbers = [2, 32, 80, 18, 12, 3]
+# smaller_numbers = []
+# numbers.each { |number|
+#   if number < 20 
+#     smaller_numbers << number
+#   end
+# }
+# p smaller_numbers
+
+# ///.Select Shortcut///
+# numbers = [2, 32, 80, 18, 12, 3]
+# smaller_numbers = numbers.select { |number|
+#   number < 20
+# }
+# p smaller_numbers
+
+#  2. Start with an array of strings and create a new array with only the strings that start with the letter "w".
+#     For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
+# ///While Loop///
+# words = ["winner", "winner", "chicken", "dinner"]
+# select_words = []
+# index = 0
+# while index < words.length
+#   if words[index][0].upcase == "W"
+#     select_words << words[index]
+#   end
+#   index += 1
+# end
+# p select_words
+
+# ///.Each Shortcut
+# words = ["winner", "winner", "chicken", "dinner"]
+# select_words = []
+# words.each { |word|
+#   if word[0].upcase == "W"
+#     select_words << word
+#   end
+# }
+# p select_words
+
+# ///.Select Shortcut
+# words = ["winner", "winner", "chicken", "dinner"]
+# select_words = words.select { |word|
+#   word[0].upcase == "W"
+# }
+# p select_words
