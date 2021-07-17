@@ -658,4 +658,103 @@
 
 
 
-# //////////Write functions using recursion//////////
+# ///Twitter Test Work///
+
+# def funWithAnagrams(text)
+#   index_1 = 0
+#   new_array = []
+#   tracker = {}
+#   text.each do |word|
+#       new_word = word.split(//).sort.join("")
+#       index_1 = text.index(word) + 1
+#       while index_1 < text.length
+#           if new_word == text[index_1].split(//).sort.join("") && tracker[new_word] == nil
+#               new_array << word
+#               tracker[new_word] = 1
+#           end
+#       index_1 += 1
+#       end
+#       if tracker[new_word] == nil
+#         new_array << word
+#       end
+#   end
+#   p new_array.sort!
+# end
+
+# funWithAnagrams(["aaa","bbb","ccc"])
+
+# //bubble sort//
+# def minMoves(arr)
+#   counter = 0
+#   index = arr.length
+#   mid = (index).div(2)
+#   arr_left = arr[0..mid].sum
+#   arr_right = arr[mid..-1].sum
+#   if arr_left > arr_right
+#     loop do
+#       swapped = false
+#       (index - 1).times do |number|
+#           if arr[number] < arr[number + 1]
+#               arr[number], arr[number + 1] = arr[number + 1], arr[number]
+#               swapped = true
+#               counter += 1
+#           end
+#       end
+#       break if not swapped
+#     end
+#   end
+# end
+#   else
+#     loop do
+#           swapped = false
+#           (index - 1).times do |number|
+#               if arr[number] > arr[number + 1]
+#                   arr[number], arr[number + 1] = arr[number + 1], arr[number]
+#                   swapped = true
+#                   counter += 1
+#               end
+#           end
+#           break if not swapped
+#       end
+#     end
+#   end  
+#   return counter  
+# end
+
+
+# minMoves([1, 1, 1, 1, 0, 1, 0, 1])
+
+
+# //////////Given an integer n, return a string array answer (1-indexed) where://////////
+
+# answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
+# answer[i] == "Fizz" if i is divisible by 3.
+# answer[i] == "Buzz" if i is divisible by 5.
+# answer[i] == i if non of the above conditions are true.
+ 
+
+# Example 1:
+
+# Input: n = 3
+# Output: ["1","2","Fizz"]
+# Example 2:
+
+# Input: n = 5
+# Output: ["1","2","Fizz","4","Buzz"]
+
+    # def fizz_buzz(n)
+    #   (1..n).map { |num|
+    #     if num % 5 == 0 && num % 3 == 0
+    #         "FizzBuzz"
+    #     elsif num % 5 == 0
+    #         "Buzz"
+    #     elsif num % 3 == 0
+    #         "Fizz"
+    #     else
+    #         num.to_s
+    #     end
+    #   }
+      
+    # end
+
+    # p fizz_buzz(15)
