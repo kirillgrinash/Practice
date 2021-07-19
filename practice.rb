@@ -758,3 +758,20 @@
     # end
 
     # p fizz_buzz(15)
+
+
+  #   def two_sum(nums, target)
+  #     index = 0
+  #     no_answer = true
+  #     answer = []
+  #     while index < nums.length
+  #         if no_answer == true && nums[index] + nums[index + 1] == target
+  #             answer << index << index + 1
+  #             no_answer = false
+  #         end
+  #         index +=1
+  #     end
+  #   return answer
+  # end
+
+  # p two_sum([2,7,11,15], 9)
